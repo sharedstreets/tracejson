@@ -57,6 +57,12 @@ GPS data is often used in bulk. Collections of TraceJSON may be expressed as Geo
 }
 ```
 
+## Implementations
+
+- [sharedstreets-js](https://github.com/sharedstreets/sharedstreets-js)
+- [trip-simulator](https://github.com/sharedstreets/trip-simulator)
+- [trip-flows](https://github.com/sharedstreets/trip-flows)
+
 ## Related
 
 - [GPX, an XML based GPS format](https://www.topografix.com/gpx.asp)
