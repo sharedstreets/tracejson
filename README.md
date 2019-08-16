@@ -1,10 +1,14 @@
 # TraceJSON
 
-TraceJSON is a GeoJSON extension for expressing GPS path data. It is designed for simplicity and compatibility with existing geo tools.
+TraceJSON is a [GeoJSON](https://geojson.org) extension for expressing GPS path data. It is designed for simplicity and compatibility with existing geo tools.
 
 ## Format
 
-TraceJSON is a valid GeoJSON Feature with a LineString geometry. An optional `timestamps` property is added containing an array of UTC epoch millisecond timestamps. If a `timestamps` property is included with a feature, it must have the same number of elements as there are positions in the `coordinates` array for the LineString geometry.
+TraceJSON is a valid GeoJSON Feature with a LineString geometry. An optional `timestamps` property is added containing an array of [UTC epoch millisecond timestamps](https://currentmillis.com). If a `timestamps` property is included with a feature, it must have the same number of elements as there are positions in the `coordinates` array for the LineString geometry.
+
+## Collections
+
+GPS data is often used in bulk. Collections of TraceJSON may be expressed as GeoJSON FeatureCollections or as [GeoJSONSeq](https://gdal.org/drivers/vector/geojsonseq.html) line delimited features. Line delimited features are highly encouraged for simplified parsing of streams of data.
 
 ## Example
 
@@ -52,3 +56,7 @@ TraceJSON is a valid GeoJSON Feature with a LineString geometry. An optional `ti
   }
 }
 ```
+
+## Related
+
+- [GPX, an XML based GPS format](https://www.topografix.com/gpx.asp)
